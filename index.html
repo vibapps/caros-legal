@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CarOS — Gizlilik Politikası</title>
+<style>
+:root { --ink:#0c1116; --muted:#5a6472; --accent:#2e5bff; --line:#e4e6ee; }
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 40px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.65; color: var(--ink); background: #fafafc;
+}
+.wrap { max-width: 720px; margin: 0 auto; background: #fff;
+        padding: 48px 44px; border-radius: 16px;
+        box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+h1 { font-size: 1.9rem; margin: 0 0 6px; letter-spacing: -.02em; }
+.date { color: var(--muted); font-size: .9rem; margin-bottom: 36px; }
+h2 { font-size: 1.15rem; margin: 34px 0 10px; color: var(--accent); }
+h3 { font-size: 1rem; margin: 22px 0 6px; }
+p, li { color: #2c2c40; }
+ul { padding-left: 22px; }
+li { margin-bottom: 7px; }
+.box { background: #edf1ff; border-left: 3px solid var(--accent);
+       padding: 16px 20px; border-radius: 8px; margin: 22px 0; }
+table { width: 100%; border-collapse: collapse; margin: 18px 0; font-size: .93rem; }
+th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { color: var(--muted); font-weight: 600; }
+a { color: var(--accent); }
+footer { margin-top: 40px; padding-top: 22px; border-top: 1px solid var(--line);
+         color: var(--muted); font-size: .9rem; }
+footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>CarOS — Gizlilik Politikası</h1>
+<p class="date">Son güncelleme: 10 Eylül 2026 · <a href="en/">English</a></p>
+
+<div class="box">
+  <p><strong>Kısa hâli:</strong> Kayıtlarınız telefonunuzda durur. Hesap açmak isteğe bağlıdır.
+  Uygulamada reklam yok, izleme yok, analiz SDK'sı yok.</p>
+</div>
+
+<h2>Sorumlu</h2>
+<p>CarOS, Volkan İlkay Bedel tarafından yayımlanmaktadır. Bu politikayla ilgili her konu —
+verilerinizi görme veya sildirme talebi dahil — için
+<a href="mailto:v.ilkay66@gmail.com">v.ilkay66@gmail.com</a>.</p>
+
+<h2>Neyi nerede saklarız</h2>
+
+<h3>Her zaman cihazınızda</h3>
+<p>Girdiğiniz her şey: aracın kendisi, kilometre okumaları, yakıt ve şarj kayıtları, bakımlar,
+harcamalar, belgeler ve dosyaları, lastikler, akü, garantiler, olaylar ve fotoğrafları,
+belirtiler, otopark, seyahatler, değerlemeler ve finans kayıtları. Bunlar uygulamanın özel
+alanında tutulur. Şasi numarası (VIN), plaka, belgeler ve finansal kayıtlar Face ID arkasına
+alınabilir; widget'larda, bildirimlerde ve istemediğiniz dışa aktarımlarda görünmez.</p>
+<p><strong>Hiç giriş yapmazsanız bu veriler telefonunuzdan hiç çıkmaz.</strong> Uygulama bu
+şekilde eksiksiz çalışır.</p>
+
+<h3>Yalnızca giriş yaparsanız sunucumuzda</h3>
+<p>Giriş yapmanın iki sebebi vardır: telefonu kaybederseniz yedek, ve aynı aracın ikinci bir
+cihazda görünmesi. Giriş yaparsanız yukarıdaki kayıtlar Supabase üzerinde işlettiğimiz bir
+veritabanına kopyalanır; satır düzeyi güvenlik kuralları yalnızca kendi hesabınızın okumasına
+izin verir. Dosyalar özel depolama alanlarına gider ve yalnızca kısa ömürlü imzalı
+bağlantılarla sunulur.</p>
+<p>Giriş yaptığınız e-posta adresini saklarız. Apple ile Giriş'te adresinizi gizlemeyi
+seçerseniz bize yalnızca Apple'ın yönlendirme adresi ulaşır. <strong>Hiçbir zaman parola
+oluşturulmaz ve saklanmaz</strong> — giriş, tek kullanımlık kod ya da Apple'ın kendi akışıdır.</p>
+
+<h2>Cihazınızdan ne, ne zaman çıkar</h2>
+<table>
+  <tr><th>Ne</th><th>Nereye</th><th>Ne zaman</th></tr>
+  <tr><td>Kayıtlarınız ve dosyalarınız</td><td>Supabase'deki kendi hesabınız</td>
+      <td>Yalnızca giriş yapmışken ve senkronizasyon açıkken</td></tr>
+  <tr><td>E-posta adresiniz</td><td>Supabase kimlik doğrulama</td>
+      <td>E-posta ile giriş yaptığınızda</td></tr>
+  <tr><td>Tek başına bir şasi numarası</td>
+      <td>ABD Ulaştırma Bakanlığı'nın herkese açık vPIC veritabanı</td>
+      <td>Yalnızca "VIN'i oku" dediğinizde; yanında başka hiçbir bilgi gitmez</td></tr>
+  <tr><td>Paylaşmayı seçtiğiniz Araç Pasaportu</td>
+      <td>Oluşturduğunuz ve iptal edebileceğiniz bağlantı</td>
+      <td>Yalnızca bağlantıyı oluşturduğunuzda ve yalnızca işaretlediğiniz alanlar</td></tr>
+  <tr><td>Satın alma doğrulaması</td><td>RevenueCat ve Apple</td>
+      <td>Pro satın alır veya geri yüklerseniz. Kart bilgileriniz bize hiç ulaşmaz.</td></tr>
+</table>
+<p>Liste bundan ibarettir.</p>
+
+<h2>Yapmadıklarımız</h2>
+<ul>
+  <li><strong>İzleme yok.</strong> Reklam kimliği yok, reklam ağı yok, uygulamalar veya siteler
+  arası izleme yok; veri simsarlarıyla paylaşım veya satış yok.</li>
+  <li><strong>Analiz SDK'sı yok.</strong> Uygulamada üçüncü taraf analiz kütüphanesi bulunmaz.</li>
+  <li><strong>Arka planda konum yok.</strong> Konum yalnızca uygulamayı kullanırken, park yerini
+  kaydetmek veya bir olaya yer eklemek için, yalnızca izin verirseniz istenir.</li>
+  <li><strong>Ödeme bilgisi yok.</strong> Satın almalar Apple tarafından yürütülür; kartınızı
+  asla görmeyiz.</li>
+  <li><strong>Fotoğraf kütüphanenizi okumak yok.</strong> Yalnızca seçtiğiniz görseller.</li>
+</ul>
+
+<h2>Haklarınız</h2>
+<ul>
+  <li><strong>Verinizi almak:</strong> Ayarlar ▸ Gizlilik ▸ Dışa aktar — cihaz üzerinde eksiksiz
+  JSON veya CSV. Hesap gerekmez, satın alma arkasında değildir.</li>
+  <li><strong>Silmek:</strong> Ayarlar ▸ Gizlilik ▸ Tüm verileri sil.</li>
+  <li><strong>Hesabı silmek:</strong> Hesap ▸ Hesabımı sil — hesabı, sunucudaki kopyayı ve
+  dosyaları kaldırır. Dondurma değil, silmedir; geri alınamaz.</li>
+  <li><strong>Paylaşım bağlantısını iptal etmek:</strong> anında geçerli.</li>
+  <li>KVKK ve GDPR kapsamındaki erişim, düzeltme, silme ve taşınabilirlik taleplerinizi doğrudan
+  bize iletebilirsiniz.</li>
+</ul>
+
+<h2>Saklama süresi</h2>
+<p>Cihazınızda, siz silene kadar. Sunucuda, kaydı veya hesabı silene kadar. Hesap silindiğinde
+saklanan veri kaldırılır; olağan altyapı yedekleri kendi döngüsünde 30 gün içinde üzerine yazılır.</p>
+
+<h2>Çocuklar</h2>
+<p>CarOS çocuklara yönelik değildir ve bilerek çocuklardan veri toplamaz.</p>
+
+<h2>Bizim adımıza veri işleyenler</h2>
+<ul>
+  <li><strong>Apple</strong> — App Store, satın almalar, Apple ile Giriş, bildirimler</li>
+  <li><strong>Supabase</strong> — giriş yapan kullanıcılar için veritabanı, kimlik doğrulama, depolama</li>
+  <li><strong>RevenueCat</strong> — abonelik durumunun doğrulanması</li>
+  <li><strong>ABD Ulaştırma Bakanlığı (vPIC)</strong> — kendi başlattığınız VIN sorguları</li>
+</ul>
+
+<h2>Değişiklikler</h2>
+<p>Bu politika, cihazınızdan ne çıktığını etkileyecek şekilde değişirse, uygulama bunu
+değişiklik yürürlüğe girmeden önce size söyler; yalnızca bu sayfayı güncellemekle yetinmeyiz.</p>
+
+<footer>
+  <p>CarOS · <a href="support/">Destek</a> · <a href="terms/">Kullanım Koşulları</a> ·
+  <a href="mailto:v.ilkay66@gmail.com">v.ilkay66@gmail.com</a></p>
+</footer>
+
+</div>
+</body>
+</html>

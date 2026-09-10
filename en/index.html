@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CarOS — Privacy Policy</title>
+<style>
+:root { --ink:#0c1116; --muted:#5a6472; --accent:#2e5bff; --line:#e4e6ee; }
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 40px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.65; color: var(--ink); background: #fafafc;
+}
+.wrap { max-width: 720px; margin: 0 auto; background: #fff;
+        padding: 48px 44px; border-radius: 16px;
+        box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+h1 { font-size: 1.9rem; margin: 0 0 6px; letter-spacing: -.02em; }
+.date { color: var(--muted); font-size: .9rem; margin-bottom: 36px; }
+h2 { font-size: 1.15rem; margin: 34px 0 10px; color: var(--accent); }
+h3 { font-size: 1rem; margin: 22px 0 6px; }
+p, li { color: #2c2c40; }
+ul { padding-left: 22px; }
+li { margin-bottom: 7px; }
+.box { background: #edf1ff; border-left: 3px solid var(--accent);
+       padding: 16px 20px; border-radius: 8px; margin: 22px 0; }
+table { width: 100%; border-collapse: collapse; margin: 18px 0; font-size: .93rem; }
+th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { color: var(--muted); font-weight: 600; }
+a { color: var(--accent); }
+footer { margin-top: 40px; padding-top: 22px; border-top: 1px solid var(--line);
+         color: var(--muted); font-size: .9rem; }
+footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>CarOS — Privacy Policy</h1>
+<p class="date">Last updated 10 September 2026 · <a href="../">Türkçe</a></p>
+
+<div class="box">
+  <p><strong>The short version:</strong> your records live on your phone. An account is
+  optional. There is no advertising, no tracking and no analytics SDK in the app.</p>
+</div>
+
+<h2>Who is responsible</h2>
+<p>CarOS is published by Volkan İlkay Bedel. For anything on this page, including a request to
+see or delete your data, write to <a href="mailto:v.ilkay66@gmail.com">v.ilkay66@gmail.com</a>.</p>
+
+<h2>What CarOS stores, and where</h2>
+
+<h3>On your device, always</h3>
+<p>Everything you enter: the car itself, odometer readings, fuel and charging, services,
+expenses, documents and their files, tyres, battery, warranties, incidents and their photos,
+symptoms, parking, trips, valuations and finance records. Your VIN, number plate, documents and
+financial records can be placed behind Face ID, and are excluded from widgets, notifications
+and exports you have not asked for.</p>
+<p><strong>If you never sign in, this data never leaves your phone.</strong> The app is fully
+usable that way.</p>
+
+<h3>On our server, only if you sign in</h3>
+<p>Signing in exists for two reasons: a backup if you lose the phone, and the same car on a
+second device. Your records are then copied to a database we operate on Supabase, under
+row-level security rules that allow only your own account to read them. Files go to private
+storage buckets, served only through short-lived signed links.</p>
+<p>We store the email address you signed in with. If you use Sign in with Apple and hide your
+address, we receive only Apple's relay address. <strong>No password is ever created or
+stored</strong> — sign-in is a one-time code or Apple's own flow.</p>
+
+<h2>What leaves your device, and when</h2>
+<table>
+  <tr><th>What</th><th>Where it goes</th><th>When</th></tr>
+  <tr><td>Your records and files</td><td>Your account on our Supabase backend</td>
+      <td>Only while signed in and sync is on</td></tr>
+  <tr><td>Your email address</td><td>Supabase authentication</td>
+      <td>When you sign in with email</td></tr>
+  <tr><td>A VIN, on its own</td>
+      <td>The public vPIC database of the US Department of Transportation</td>
+      <td>Only when you tap "Read the VIN". Nothing else is sent with it.</td></tr>
+  <tr><td>A Car Passport you chose to share</td>
+      <td>A link you generate and can revoke</td>
+      <td>Only when you create it, and only the fields you ticked</td></tr>
+  <tr><td>Purchase validation</td><td>RevenueCat and Apple</td>
+      <td>If you buy or restore Pro. Your card details never reach us.</td></tr>
+</table>
+<p>That is the complete list.</p>
+
+<h2>What CarOS does not do</h2>
+<ul>
+  <li><strong>No tracking.</strong> No advertising identifier, no ad network, no cross-app or
+  cross-site tracking, nothing sold or shared with data brokers.</li>
+  <li><strong>No analytics SDK.</strong></li>
+  <li><strong>No background location.</strong> Location is requested only while you are using
+  the app, only to save where you parked or to attach a place to an incident.</li>
+  <li><strong>No payment details.</strong> Purchases are handled by Apple.</li>
+  <li><strong>No reading of your photo library.</strong> Only the images you pick.</li>
+</ul>
+
+<h2>Your rights</h2>
+<ul>
+  <li><strong>Take your data:</strong> Settings ▸ Privacy ▸ Export produces a complete JSON or
+  CSV file on the device. No account, no purchase.</li>
+  <li><strong>Delete it:</strong> Settings ▸ Privacy ▸ Delete all data.</li>
+  <li><strong>Delete the account:</strong> Account ▸ Delete my account removes the account, the
+  server copy and the stored files. It cannot be undone.</li>
+  <li><strong>Revoke a share link</strong> at any time; revocation is immediate.</li>
+  <li>Under the GDPR and the Turkish KVKK you may also ask us directly for access, correction,
+  erasure or portability, and complain to your local supervisory authority.</li>
+</ul>
+
+<h2>How long anything is kept</h2>
+<p>On your device, until you delete it. On the server, until you delete the record or the
+account. Ordinary infrastructure backups are overwritten within 30 days.</p>
+
+<h2>Children</h2>
+<p>CarOS is not directed at children and does not knowingly collect data from them.</p>
+
+<h2>Who processes data on our behalf</h2>
+<ul>
+  <li><strong>Apple</strong> — App Store, purchases, Sign in with Apple, notifications</li>
+  <li><strong>Supabase</strong> — database, authentication and storage for signed-in users</li>
+  <li><strong>RevenueCat</strong> — subscription status validation</li>
+  <li><strong>US Department of Transportation (vPIC)</strong> — VIN lookups you start yourself</li>
+</ul>
+
+<h2>Changes</h2>
+<p>If this policy changes in a way that affects what leaves your device, the app will say so
+before the change takes effect, rather than only updating this page.</p>
+
+<footer>
+  <p>CarOS · <a href="../support/">Support</a> · <a href="../terms/">Terms</a> ·
+  <a href="mailto:v.ilkay66@gmail.com">v.ilkay66@gmail.com</a></p>
+</footer>
+
+</div>
+</body>
+</html>
